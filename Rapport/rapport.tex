@@ -1,0 +1,66 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[frenchb]{babel}
+
+\usepackage{fancyhdr} % headers
+\usepackage[usenames,dvipsnames]{color} % colors
+\usepackage{graphicx} % images
+\usepackage{listings} % source code
+\usepackage{titling} % meta-infos
+\usepackage{courier} % courier font
+\usepackage{fullpage} % full page layout
+\usepackage{titlesec} % title customization
+\usepackage{parskip} % paragraphs spacing
+\usepackage{amsmath}
+\usepackage{enumitem}
+%\usepackage{showframe} % layout debug
+
+\usepackage{float}
+\restylefloat{figure}
+
+\topmargin -10mm
+\headsep 5mm
+\headheight 10mm
+
+\linespread{1.1}
+\renewcommand{\arraystretch}{1.3}
+
+\setlength\parindent{0pt}
+\setlength{\unitlength}{1cm}
+\setlength{\droptitle}{-1.6cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+
+\def \doccourse { ASD2 }
+\def \doctitle { Labo 04 }
+\author{Kevin Do Vale \and Aleksandar Milenkovic \and David Cruchon}
+
+\rhead{ \theauthor \\ \today}
+\lhead{\doccourse \\ \doctitle }
+\title{{\normalsize \doccourse} \\ \doctitle }
+
+\begin{document}
+
+\maketitle
+\vspace{1em}
+
+\section{Analyse}
+Cette première partie compare les différentes fonctions de hashage fournie de base. A savoir :
+\begin{itemize}  
+	\item atoi
+	\item atol
+	\item 3 fonctions de compression polynomiales
+	\item hash
+	\item sha256
+	\item Une fonction custom CityHash64
+\end{itemize}
+
+
+
+%\includegraphics[width=\textwidth,keepaspectratio]{PHASE_2.png}
+
+\end{document}
