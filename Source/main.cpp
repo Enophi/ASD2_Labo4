@@ -7,9 +7,9 @@
 //  Copyright © 2015 IICT, HEIG-VD. All rights reserved.
 //
 
-#define FILENAME "D:\\Cloud\\OneDrive\\04 - ASD2\\00 - Labos\\ASD2_Labo4\\Source\\liste1.txt"
+#define FILENAME "/Users/david/Library/Mobile Documents/com~apple~CloudDocs/HEIG-VD/E2/ASD2/ASD2_Labo4/Source/liste2.txt"
 //#define FILENAME "liste2.txt"
-#define MAX_LOAD_FACTOR 10.0f
+#define MAX_LOAD_FACTOR 0.2f
 
 #include <cstdlib>
 #include <iostream>
@@ -48,17 +48,17 @@ int main() {
     std::string filename(FILENAME);
     
     //PART 1
-    test<DirectoryInt>(filename);
-    test<DirectoryLong>(filename);
-    test<DirectoryPol<2>>(filename);    //polynomial with z =  2
-    test<DirectoryPol<31>>(filename);   //polynomial with z = 31
-    test<DirectoryPol<37>>(filename);   //polynomial with z = 37
-    test<DirectoryStl>(filename);
-    test<DirectorySha256>(filename);
-    test<DirectoryCity>(filename);
+//    test<DirectoryInt>(filename);
+//    test<DirectoryLong>(filename);
+//    test<DirectoryPol<2>>(filename);    //polynomial with z =  2
+//    test<DirectoryPol<31>>(filename);   //polynomial with z = 31
+//    test<DirectoryPol<37>>(filename);   //polynomial with z = 37
+//    test<DirectoryStl>(filename);
+//    test<DirectorySha256>(filename);
+//    test<DirectoryCity>(filename);
     
     //PART 2
-    //test<DirectoryWithoutAVS>(filename);
+    test<DirectoryWithoutAVS>(filename);
     
     return EXIT_SUCCESS;
     
