@@ -7,9 +7,9 @@
 //  Copyright © 2015 IICT, HEIG-VD. All rights reserved.
 //
 
-#define FILENAME "/Users/david/Library/Mobile Documents/com~apple~CloudDocs/HEIG-VD/E2/ASD2/ASD2_Labo4/liste1.txt"
+#define FILENAME "D:\\Cloud\\OneDrive\\04 - ASD2\\00 - Labos\\ASD2_Labo4\\Source\\liste1.txt"
 //#define FILENAME "liste2.txt"
-#define MAX_LOAD_FACTOR 0.5f
+#define MAX_LOAD_FACTOR 10.0f
 
 #include <cstdlib>
 #include <iostream>
@@ -38,7 +38,7 @@ void test(std::string filename) {
     std::cout << "Distribution: " << std::endl;
     tester.displayDistributionStats();
     tester.performSearch();
-    std::cout << "Search: " << std::en dl;
+    std::cout << "Search: " << std::endl;
     tester.displaySearchStats();
     std::cout << std::endl;
 }
