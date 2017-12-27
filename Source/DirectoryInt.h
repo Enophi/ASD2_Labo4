@@ -56,7 +56,6 @@ namespace std
             std::string avsCpy(d.getAvs());
             
             //we remove all non-numerical caracters
-            avsCpy.erase(std::remove_if(avsCpy.begin(), avsCpy.end(), (int(*)(int)) DirectoryInt::isNotDigit), avsCpy.end());
             std::string avsCpyTrimmed = avsCpy.substr(3, 9); //the first 3 digits are fixed, the last one is a checksum
             
             //convert string to long

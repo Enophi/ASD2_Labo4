@@ -53,17 +53,17 @@ namespace std {
             //we use stl hash function for string type on name, we could do much better...
             std::string key = d.getBirthday() + d.getName() + d.getFirstname();
 
-            return std::hash<std::string>()(key); // Première solution
+            //return std::hash<std::string>()(key); // Première solution
 
             //On utilise la compression polynomiale
             size_t h = 0L;
-            size_t z = 33; // Page 16 du polycop
+            size_t z = 33; // Choix du nombre premier. Page 16 du polycop
 
-            for (int i = 0; i < key.length(); ++i) {
-                h = (z * h) + key[i];
+            for (char i : key) {
+                h = (z * h) + i;
             }
 
-            return h;
+            return h; // Deuxième solution
         }
     };
 }

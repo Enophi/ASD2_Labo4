@@ -7,9 +7,9 @@
 //  Copyright © 2015 IICT, HEIG-VD. All rights reserved.
 //
 
-#define FILENAME "/Users/david/Library/Mobile Documents/com~apple~CloudDocs/HEIG-VD/E2/ASD2/ASD2_Labo4/Source/liste2.txt"
+#define FILENAME "/Users/david/Library/Mobile Documents/com~apple~CloudDocs/HEIG-VD/E2/ASD2/ASD2_Labo4/Source/liste1.txt"
 //#define FILENAME "liste2.txt"
-#define MAX_LOAD_FACTOR 0.2f
+#define MAX_LOAD_FACTOR 1.f
 
 #include <cstdlib>
 #include <iostream>
