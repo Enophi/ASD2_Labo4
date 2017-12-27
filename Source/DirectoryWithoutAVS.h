@@ -53,7 +53,8 @@ namespace std {
             //we use stl hash function for string type on name, we could do much better...
             std::string key = d.getBirthday() + d.getName() + d.getFirstname();
 
-            //return std::hash<std::string>()(key); // Première solution
+            // Première solution
+            //return std::hash<std::string>()(key);
 
             //On utilise la compression polynomiale
             size_t h = 0L;
@@ -63,7 +64,8 @@ namespace std {
                 h = (z * h) + i;
             }
 
-            return h; // Deuxième solution
+            // Deuxième solution
+            return h;
         }
     };
 }
